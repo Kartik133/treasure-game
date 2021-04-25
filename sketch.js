@@ -16,7 +16,7 @@ var boyImg,boy;
 
 function preload() {
   background_img = loadImage("Background img.png");
-  doorImg = loadImage("Door img.png");
+  doorImg = loadImage("Door Img.png");
   boyImg = loadImage("boy1.png");
 }
 
@@ -42,29 +42,12 @@ function draw() {
 
   if(gameState==="form") {
     game.start2();
+    //s.hide();
   }
 
   if(gameState==="level1") {
      game.play1();
-     if(keyDown("up")) {
-      boy.velocityX+=0;
-      boy.velocityY+=2;
-    }
     
-    /*if(keyDown("down")) {
-      boy.x=boy.x+0;
-      boy.y=boy.y+2;
-    }
-    
-    if(keyDown("left")) {
-      boy.x=boy.x-2;
-      boy.y=boy.y+0;
-    }
-   
-    if(keyDown("right")) {
-      boy.x=boy.x+2;
-      boy.y=boy.y+0;
-    }*/
   }
 
   drawSprites();
